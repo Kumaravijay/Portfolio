@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kumara Vijay M G - Data Science & Analytics Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-13c+HgtpP5NX7pZt+l9j3RXYnmoPjVGFtKp7QRwRVqzA6nxsLOT9e6x6tEN84ImU8vzU6RcaIebgfYVwvEU7hA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="navbar" id="top">
+    <nav class="container flex items-center justify-between">
+      <a href="#hero" class="logo" aria-label="Home">Kumara Vijay M G</a>
+
+      <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <ul class="nav-links flex gap-16" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
+        <i class="fa fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero flex flex-col items-center justify-center" data-reveal>
+      <h1 class="hero__title">Kumara Vijay M G</h1>
+      <p class="hero__subtitle">Data Science & Analytics | Open to Data Analyst and Data Scientist Roles</p>
+      <p class="hero__location">
+        <i class="fa fa-map-marker-alt"></i> Chennai, India
+      </p>
+      <p class="hero__tagline">Building the entire data narrative—from analysis to predictive modeling</p>
+      <div class="flex gap-8 mt-8">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--outline">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about container" data-reveal>
+      <h2>About Me</h2>
+      <div class="about__content">
+        <div class="about__summary">
+          <p>As a professional in Data Science and Analytics, I'm passionate about building the entire data narrative—from initial analysis and business intelligence to predictive modeling.</p>
+          
+          <p>My ongoing Post Graduate Program in Data Science from Great Lakes is equipping me with a robust toolkit. I have a strong command of Python for sophisticated analysis, SQL for complex data manipulation, and machine learning for building predictive models. I'm also experienced in using cloud platforms for data handling and creating intuitive data visualizations that bring insights to life for all stakeholders.</p>
+          
+          <p>My engineering background provides me with a rigorous, problem-solving mindset. I enjoy deconstructing complex business challenges and developing data-driven solutions that are not only technically sound but also strategically valuable.</p>
+          
+          <p>Feel free to explore my projects below, where I've put these skills into practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education container" data-reveal>
+      <h2>Education</h2>
+      <div class="education__content">
+        <div class="education-item current">
+          <div class="education-status">
+            <span class="status status--info">Currently Pursuing</span>
+          </div>
+          <h3>PGP in Data Science and Engineering</h3>
+          <p class="institution">Great Lakes Institute of Management</p>
+          <p class="duration">Jan 2025 – June 2025</p>
+          <p class="coursework"><strong>Coursework:</strong> DBMS, Python for Problem Solving, EDA, ETL, Statistics</p>
+        </div>
+        
+        <div class="education-item completed">
+          <div class="education-status">
+            <span class="status status--success">Completed</span>
+          </div>
+          <h3>B.E. in Electronics and Communication Engineering</h3>
+          <p class="institution">R.M.K. Engineering College</p>
+          <p class="duration">June 2020 – April 2024</p>
+          <p class="gpa"><strong>GPA:</strong> 8.39/10.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills container" data-reveal>
+      <h2>Technical Skills</h2>
+      <div class="skills__categories">
+        <div class="skill-category">
+          <h3>Technical Skills</h3>
+          <div class="skill-tags" id="technicalSkills"></div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Libraries & Frameworks</h3>
+          <div class="skill-tags" id="librariesSkills"></div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags" id="toolsSkills"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects container" data-reveal>
+      <h2>Projects</h2>
+      <div class="projects__grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience container" data-reveal>
+      <h2>Experience</h2>
+      <div class="experience__content" id="experienceContent"></div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications container" data-reveal>
+      <h2>Certifications</h2>
+      <div class="certifications__content" id="certificationsContent"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact container" data-reveal>
+      <h2>Contact</h2>
+      <div class="contact__content">
+        <div class="contact__info">
+          <div class="contact__item">
+            <i class="fa fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:kumaravijay2626@gmail.com">kumaravijay2626@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact__item">
+            <i class="fa fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <a href="tel:+916382666767">+91 63826 66767</a>
+            </div>
+          </div>
+          
+          <div class="contact__item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <a href="#" target="_blank" rel="noopener">LinkedIn Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          id="contactForm"
+          class="contact__form"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-16 flex justify-center">
+    <p>&copy; <span id="year"></span> Kumara Vijay M G. All rights reserved.</p>
+  </footer>
+</body>
+</html>
